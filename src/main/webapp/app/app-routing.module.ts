@@ -1,7 +1,6 @@
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { errorRoute, navbarRoute } from './layouts';
-
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {errorRoute, navbarRoute} from './layouts';
 const LAYOUT_ROUTES = [
     navbarRoute,
     ...errorRoute
@@ -9,10 +8,11 @@ const LAYOUT_ROUTES = [
 
 @NgModule({
     imports: [
-        RouterModule.forRoot(LAYOUT_ROUTES, { useHash: true })
+        RouterModule.forRoot(LAYOUT_ROUTES, {useHash: true})
     ],
     exports: [
         RouterModule
     ]
 })
-export class JhipsterSmartAdminAppRoutingModule {}
+export class JhipsterSmartAdminAppRoutingModule {
+}

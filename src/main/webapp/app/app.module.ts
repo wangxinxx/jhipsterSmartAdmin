@@ -12,6 +12,8 @@ import { JhipsterSmartAdminAccountModule } from './account/account.module';
 import { JhipsterSmartAdminEntityModule } from './entities/entity.module';
 import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
+import { routing } from './smartadmin/smartadmin.routing';
+import { SmartAdminModule } from "./smartadmin/smartadmin.module";
 
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 
@@ -35,6 +37,7 @@ import {
         JhipsterSmartAdminAdminModule,
         JhipsterSmartAdminAccountModule,
         JhipsterSmartAdminEntityModule,
+        SmartAdminModule
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [
