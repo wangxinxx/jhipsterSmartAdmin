@@ -8,7 +8,6 @@ import {MainLayoutComponent} from "./shared/layout/app-layouts/main-layout.compo
 import {AuthLayoutComponent} from "./shared/layout/app-layouts/auth-layout.component";
 import {ModuleWithProviders} from "@angular/core";
 import { HomeComponent } from './+home/home.component';
-import {JhipsterSmartAdminBaseQuestionExamModule} from '../entities/base-question-exam/base-question-exam.module';
 
 export const routes: Routes = [
     {
@@ -27,7 +26,7 @@ export const routes: Routes = [
             },
             {
                 path: 'test',
-                loadChildren: 'app/entities/base-question-exam/base-question-exam.module#JhipsterSmartAdminBaseQuestionExamModule'
+                loadChildren: '../entities/base-question-exam/base-question-exam.module#JhipsterSmartAdminBaseQuestionExamModule'
             }
         ]
     },
